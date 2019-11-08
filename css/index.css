@@ -184,6 +184,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgba(246, 246, 246, 0.9);
 }
 .nav-container h1 {
   font-size: 4rem;
