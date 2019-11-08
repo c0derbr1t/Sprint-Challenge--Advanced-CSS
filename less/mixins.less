@@ -1,1 +1,27 @@
 // Mixins Here
+
+.btn-style(@bg-color, @color, @f-size) {
+    border-radius: @small-radius;
+    background-color: @bg-color;
+    color: @color;
+    width: @btn-width;
+    font-size: @f-size;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.1;
+}
+
+.flex(@dir, @justify, @align) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-switch(@btn-color, @btn-bg-color) {
+    &:hover {
+        background-color: @btn-color;
+        color: @btn-bg-color;
+        font-weight: bold;
+    }
+}

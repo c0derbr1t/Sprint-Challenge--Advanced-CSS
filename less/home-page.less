@@ -2,6 +2,13 @@
 
 .home {
   .intro {
+    .header-img {
+      border-radius: @small-radius;
+
+      @media @phone {
+        width: 100%;
+      }
+    } // Ends .header-img
 
     h2 {
       padding: 15px;
@@ -57,6 +64,9 @@
       }
 
       .btn {
+        .btn-style(@btn-bg-color, @porcelain, 1.75rem);
+
+        .hover-switch(@porcelain, @btn-bg-color);
       }
     }
 
