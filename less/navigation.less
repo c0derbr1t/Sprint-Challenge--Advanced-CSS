@@ -1,1 +1,51 @@
 // Navigation code here
+.nav-container{
+    width: 100%;
+    margin: 0 auto;  
+    background: @wild-sand;
+    .flex(column, center, center);
+
+// STRETCH
+    position: sticky;
+    top: 0;
+    background: rgba(246,246,246, 0.90);
+
+    h1{
+        font-size: 4rem;
+        padding: 1.25% 0 0.75%;
+        color: @header-font-color;
+    } // Ends h1
+
+    .hidden{
+        display: none;
+    } // Ends .hidden
+
+    .navigation{
+        width: 35%;
+        .flex(row, space-around, center);
+        padding: 0.5%;
+
+        a{
+            color: @header-font-color;
+            text-decoration: none;
+            font-size: 1.75rem;
+            padding: 1.5%;
+        } // Ends a
+    } // Ends .navigation
+
+    @media @phone {
+        h1 {
+            font-size: 3.6rem;
+            padding: 3% 0 0;
+        } // Ends h1
+
+        .navigation {
+            width: 100%;
+
+            a {
+                font-size: 1.5rem;
+                padding: 3% 3% 2.5%;
+            } // Ends a
+        } // Ends .navigation
+    } // Ends @media @phone
+} // Ends .nav-container
